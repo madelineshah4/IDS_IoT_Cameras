@@ -1,4 +1,7 @@
 # IDS_IoT_Cameras
+
+Check the Releases tab for the data folder!! Data was too large to include in the main repository and was included as a .zip file there.
+
 In this project, the goal is to create an IDS (intrusion detection system) specifically for IoT cameras. A model such as this, if implemented into IoT cameras in development, would help decrease the risk of breaches resulting in exposed camera feeds. A detection system such as this will greatly help consumers ensure their privacy. 
 
 As it seems that BF attacks may be easier to detect than the other traffic types using traffic data, we create 2 separate models, where one runs before the second. The first will be a binary classification model that detects brute force attacks, and the second will be a multi-class detection model that determines traffic type if brute force is not present. As brute force attacks are of utmost concern (in the context of this project), we test a 2-model system where BF is prioritized against a one-model system that detects any traffic type to determine which is more accurate in correctly identifying intrusion. 
